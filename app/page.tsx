@@ -6,10 +6,18 @@ import Map from "@/components/Map";
 export default function Home() {
   return (
     <main>
-      <Hero />
-      <NewProducts />
-      <Testimonial />
-      <Map />
+      <div>
+        <Hero />
+      </div>
+      <div>
+        <NewProducts />
+      </div>
+      <div>
+        <Testimonial />
+      </div>
+      <div>
+        <Map />
+      </div>
     </main>
   );
 }

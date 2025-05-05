@@ -4,13 +4,24 @@ import Slider from "react-slick";
 import Slide from "./Slide";
 
 const Hero = () => {
-  var settings = {
+  const settings = {
     dots: true,
     infinite: true,
-    autoplay: true,
+    speed: 500,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    slideToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
     pauseOnHover: false,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          dots: false,
+        },
+      },
+    ],
   };
 
   const slideData = [
